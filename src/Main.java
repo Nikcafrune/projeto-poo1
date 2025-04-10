@@ -10,6 +10,13 @@ public class VerificaPar {
         int numero = 10;
         boolean resultado = ehPar(numero);
         System.out.println("O número " + numero + " é par? " + resultado);
+
+        int soma = somar(5, 7);
+        System.out.println("A soma é: " + soma);
+    }
+
+    public static int somar(int a, int b) {
+        return a + b;
     }
 }
 
