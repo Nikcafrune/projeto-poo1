@@ -1,7 +1,19 @@
-
 import java.util.List;
 
-public class MediaAritmetica {
+public class VerificaPar {
+
+    public static boolean ehPar(int numero) {
+        return numero % 2 == 0;
+    }
+
+    public static void main(String[] args) {
+        int numero = 10;
+        boolean resultado = ehPar(numero);
+        System.out.println("O número " + numero + " é par? " + resultado);
+    }
+}
+
+class MediaAritmetica {
 
     public static double calcularMedia(List<Integer> numeros) {
         if (numeros == null || numeros.isEmpty()) {
@@ -39,4 +51,3 @@ class Fatorial {
         System.out.println("Fatorial de " + numero + " é: " + resultado);
     }
 }
-
