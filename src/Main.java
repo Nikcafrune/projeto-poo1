@@ -1,21 +1,20 @@
-public class Main {
+import java.util.List;
 
+public class MediaAritmetica {
 
+    public static double calcularMedia(List<Integer> numeros) {
+        if (numeros == null || numeros.isEmpty()) {
+            throw new IllegalArgumentException("A lista não pode ser nula ou vazia.");
+        }
+
+        int soma = 0;
+        for (int numero : numeros) {
+            soma += numero;
+        }
+
+        return (double) soma / numeros.size();
+    }
 
     public static void main(String[] args) {
-
-
-        System.out.println("Boa tarde Everton.");
-        System.out.println("Recebendo dois números inteiros e retornando soma");
-        System.out.println("Recebe um número inteiro e retorna true se for par e false se for ímpar.");
-        System.out.println("Recebe um número inteiro positivo e retorna seu fatorial.");
-        System.out.println("Recebe uma string e retorna a string invertida.");
-        System.out.println("Recebe uma lista de números e retorna a média aritmética.");
-        System.out.println("Recebe uma string e retorna o número de vogais contidas nela.");
-
-
-        System.out.println(" Valeu demais, tamo junto! ");
-
-
-    }
-}
+        List<Integer> lista = List.of(10, 20, 30, 40, 50);
+        double media = calcular
